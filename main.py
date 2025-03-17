@@ -13,12 +13,8 @@ def get_book_text(file_path):
 def main():
     text = get_book_text(sys.argv[1])
     num_words = get_num_words(text)
-    #print(get_characters(text)) 
-
-    
     list = sorted_list(get_characters(text))
 
-    
     print("============ BOOKBOT ============")
     print(f"Analyzing book found at {sys.argv[1]}...")
     print("----------- Word Count ----------")
